@@ -51,7 +51,7 @@ The Battery Pack is connect to the fan that is then connected to the collector o
 The Raspberry PIs 5th GPIO pin is attached up to a diode, which is then connected to a resistor that is  connected to the base of the transistor. If the 5th GPIO pin transmits a positive current the fan turns on.
 
 
-<img style="float:left;" src="https://raw.githubusercontent.com/StuartSmith/Raspberry-Pi-Fan-Control/master/images/Wiring.jpg">
+<img style="float:left;" src="https://raw.githubusercontent.com/StuartSmith/Raspberry-Pi-Fan-Control/master/images/wiring.jpg">
 
 Connecting the Transistor:
 
