@@ -94,9 +94,7 @@ Source code:
 
 All the Source Code for this project can be found on
 
-Git Hub
-
-https://github.com/StuartSmith/Rasberry-Pi-Fan-Control
 
 Project in action
 
+https://youtu.be/V9ZviAILdVg
