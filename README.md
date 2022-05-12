@@ -48,7 +48,7 @@ Wiring it up:
 
 The Battery Pack is connected to the fan that is then connected to the collector of the transistor and the emitter of the transistor is attached to a common ground.
 
-The Raspberry PIs 5th GPIO pin is attached up to a diode, which is then connected to a resistor that is connected to the base of the transistor. If the 5th GPIO pin transmits a positive current the fan turns on.
+The Raspberry PI's 5th GPIO pin is attached up to a diode, which is then connected to a resistor that is connected to the base of the transistor. If the 5th GPIO pin transmits a positive current the fan will turn on.
 
 <img style="float:left;" src="https://raw.githubusercontent.com/StuartSmith/Raspberry-Pi-Fan-Control/master/images/wiring.jpg">
 
@@ -81,10 +81,6 @@ Changing the battery back to output 12 volts instead of 18.
 
 
 If all the batteries are inserted into the battery pack it will output close to 18 volts, The fan that  is being used, is designed to run on 12 volts. To meet the requirements of the fan, two of the batteries were remove and replaced with two bread board wires. Once this was implemented, the battery packed outputted 12 volts of current.
-
-Source code:
-
-All the Source Code for this project can be found on
 
 
 Project in action
