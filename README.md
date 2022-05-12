@@ -3,7 +3,7 @@ Application to control a fan from a Rasberry Pi Running windows 10
 
 The reasoning behind this post:
 
-I wanted to be able to control a 12 volt fan or other apparatus from a Raspberry Pi and was not sure how to do this. One of the problems, that had to be solved was solve was how to control an electrical device that requires far more power than was offered through a Raspberry Pi. A Raspberry Pi can only output a maximum of 5 volts, but the fan requires 12 volts, so how does one make this work? One of the most common solution to this problem is the use of a transistor. A transistor gives one the ability to control work loads with much higher voltage requirements than a micro control can provide, in this case a Raspberry Pi.  I do not have an electrical engineering background. In college, many years ago, I took a course on assembly and  some physics classes, but even with this experience,  I did not really know where to start. So I started researching and hacking.
+I wanted to be able to control a 12 volt fan or other apparatus from a Raspberry Pi and was not sure how to do this. One of the problems, that had to be solved was solve was how to control an electrical device that requires far more power than was offered through a Raspberry Pi. A Raspberry Pi can only output a maximum of 5 volts, but the fan requires 12 volts, so how does one make this work? One of the most common solution to this problem is the use of a transistor. A transistor, gives one the ability to control work loads with much higher voltage requirements than a micro control can provide, in this case a Raspberry Pi.  I do not have an electrical engineering background. In college, many years ago, I took a course on assembly and  some physics classes, but even with this experience,  I did not really know where to start. So I started researching and hacking.
 
 ### Bread Board Diagram
 
@@ -46,10 +46,9 @@ Software Requirements:
 
 Wiring it up:
 
-The Battery Pack is connect to the fan that is then connected to the collector of the transistor and the emitter of the transistor is attached to a common ground.
+The Battery Pack is connected to the fan that is then connected to the collector of the transistor and the emitter of the transistor is attached to a common ground.
 
-The Raspberry PIs 5th GPIO pin is attached up to a diode, which is then connected to a resistor that is  connected to the base of the transistor. If the 5th GPIO pin transmits a positive current the fan turns on.
-
+The Raspberry PIs 5th GPIO pin is attached up to a diode, which is then connected to a resistor that is connected to the base of the transistor. If the 5th GPIO pin transmits a positive current the fan turns on.
 
 <img style="float:left;" src="https://raw.githubusercontent.com/StuartSmith/Raspberry-Pi-Fan-Control/master/images/wiring.jpg">
 
@@ -60,14 +59,9 @@ The first thing, I found out was I needed a transistor. I had heard of transisto
 
 <img style="float:left;" src="https://raw.githubusercontent.com/StuartSmith/Raspberry-Pi-Fan-Control/master/images/TransistorA.png">
 
-
-The B or Base is the application that applies a small current to turn on a larger one, the collector is for the larger current. For a tip 120 transistor this can be up 120 volts. Then finally there is the emitter which needs to be connected to a common ground. Yes, the Raspberry Pi and the fan must have the same ground… this would be intuitive to someone with background in circuitry but to me, the Apprentice to the Apprentice of the electrical engineer not so much.
-
-
+The B or Base is the application that applies a small current to turn on a larger one, the collector is for the larger current. For a tip 120 transistor this can be up 120 volts. Then finally there is the emitter which needs to be connected to a common ground. Yes, the Raspberry Pi and the fan must have the same ground… this would be intuitive to someone with background in circuitry but to me, the apprentice to the apprentice of the electrical engineer not so much.
 
 <img style="float:left;" src="https://raw.githubusercontent.com/StuartSmith/Raspberry-Pi-Fan-Control/master/images/TranistorWiring.png">
-
-
 
 So the base pin of the transistor will be connected to the Raspberry Pi. The ground of the fan will be connected to the collector of the transistor and emitter of the transistor will be connected to a common ground for both the fan and the Raspberry Pi.
 
@@ -75,9 +69,7 @@ Connecting the Diodes
 
 <img style="float:left;" src="https://raw.githubusercontent.com/StuartSmith/Raspberry-Pi-Fan-Control/master/images/Diodes.png">
 
-
 Warning: Make sure to use diodes when using transistors or the Raspberry Pi will be short lived.
-
 
 Next part of the circuitry is using a diode. A diode is a one-way street for electrons, when using transistors we need to use diodes to block reverse current from coming back from the high voltage appliance/fan back to our controller, in this case a Raspberry Pi. If a 12 volt current was applied to the Raspberry Pi, it would short it out.
 
