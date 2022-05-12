@@ -1,5 +1,5 @@
 # Rasberry-Pi-Fan-Control
-Application to control a fan from a Rasberry Pi Running windows 10
+An application to control a fan from a Rasberry Pi, running Windows 10 Core.
 
 The reasoning behind this post:
 
