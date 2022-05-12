@@ -3,7 +3,8 @@ Application to control a fan from a Rasberry Pi Running windows 10
 
 The reasoning behind this post:
 
-I wanted to be able to control a 12 volt fan or other apparatus from a Raspberry Pi and was not sure how to do this. One of the problems, that had to be solved was solve was how to control an electrical device that requires far more power than was offered through a Raspberry Pi. A Raspberry Pi can only output a maximum of 5 volts, but the fan requires 12 volts, so how does one make this work? One of the most common solution to this problem is the use of a transistor. A transistor, gives one the ability to control work loads with much higher voltage requirements than a micro control can provide, in this case a Raspberry Pi.  I do not have an electrical engineering background. In college, many years ago, I took a course on assembly and  some physics classes, but even with this experience,  I did not really know where to start. So I started researching and hacking.
+I wanted to be able to control a 12 volt fan or other apparatus from a Raspberry Pi and was not sure how to do this. One of the problems, that had to be solved was how to control an electrical device that requires far more power than what is offered through a Raspberry Pi. A Raspberry Pi can only output a maximum of 5 volts, but the fan requires 12 volts, so how does one make this work? 
+One of the most common solution to this problem is the use of a transistor. A transistor, gives one the ability to control work loads with much higher voltage requirements than a micro control can provide, in this case a Raspberry Pi.  I do not have an electrical engineering background. In college, many years ago, I took a course on assembly and  some physics classes, but even with this experience,  I did not really know where to start. So I started researching and hacking...
 
 ### Bread Board Diagram
 
